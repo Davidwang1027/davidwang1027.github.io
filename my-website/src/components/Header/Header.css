@@ -1,0 +1,46 @@
+header {
+    background-color: #f8f8f8; /* Light grey background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px; /* Adjust spacing between nav items as needed */
+    flex: 0 0 auto;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    header nav ul {
+        display: none; /* Hide nav on small screens */
+    }
+    /* Add styles for a hamburger menu here */
+}

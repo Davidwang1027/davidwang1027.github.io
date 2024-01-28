@@ -1,0 +1,29 @@
+
+.experience-item {
+  display: flex;
+  align-items: flex-start; /* Align the start of the items */
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  width: 100px; /* Adjust the size as needed */
+  margin-right: 20px;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-details h3, .experience-details h4, .experience-details p, .experience-details ul {
+  margin-bottom: 0.5em;
+}
+
+.experience-details ul {
+  padding-left: 20px; /* Standard indent for bullet points */
+}
+
+.experience-details ul li {
+  list-style-type: disc; /* Standard bullet point style */
+}
+
+  
