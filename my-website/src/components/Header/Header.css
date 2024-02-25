@@ -9,9 +9,14 @@ header {
     box-sizing: border-box; /* Include padding and border in the width */
 }
 
-header .logo h1 {
+
+header h1 {
     margin: 0;
     font-size: 1.5em;
+    color: white;
+}
+header .logo {
+    width: 48px; 
 }
 
 header nav {

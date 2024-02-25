@@ -1,13 +1,16 @@
 
 .experience-item {
   display: flex;
-  align-items: flex-start; /* Align the start of the items */
   margin-bottom: 20px;
+  position: relative;
+  align-items: center;
+  margin-left: 20px
 }
 
 .company-logo {
   width: 100px; /* Adjust the size as needed */
   margin-right: 20px;
+  
 }
 
 .experience-details {

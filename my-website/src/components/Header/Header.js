@@ -1,24 +1,35 @@
-import React from 'react';
-import './Header.css';
+import React from 'react'
+import './Header.css'
+import { Layout, Menu } from 'antd'
 
-function Header() {
-    return (
-        <header>
+const { Header } = Layout
+const headerItems = [
+  {
+    key: 'experience',
+    label: (
+        <a href= "./experience"> Experience </a>
+    )
+  },
+  { key: 'project', label: 'Project' },
+  { key: 'course-note', label: 'Course Note' },
+  { key: 'personal', label: 'Personal' },
+  { key: 'contact', label: 'Contact' }]
+
+function customHeader () {
+  return (
+        <Header>
             <div className="logo">
-                {/* Your name or logo here */}
-                <h1>David Wang</h1>
+                {/* <img src='winner_technology_logo.jpeg' alt="Personal Logo" />; */}
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#coursenotes">Course Notes</a></li>
-                    <li><a href="#personal">Personal</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    );
+            <h1>David Wang</h1>
+            <Menu
+                theme="dark"
+                mode="horizontal"
+                items={headerItems}
+                style={{ flex: 1, minWidth: 0 }}>
+            </Menu>
+        </Header>
+  )
 }
 
-export default Header;
+export default customHeader
